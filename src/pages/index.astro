@@ -1,9 +1,26 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Badge from '../components/badge.astro';
 ---
 
 <Layout title="Welcome to Astro.">
+	<section class="w-full mx-auto lg:w-[740px] py-44 ">	
 	<main>
+		<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+			Hey, soy Rolando 
+			<a 
+			href="https://www.linkedin.com/in/rolando-a-duvergé-5b0826234"
+			target="_blank"
+			rel="	"
+			class="flex justify-center items-center"
+			>
+			<Badge>Disponible para trabajar</Badge></a>
+		</h1>
+		<h2 class="text-xl opacity-80">
+			Desarrollador Web de Santo Domingo, República Dominicana. Me especializo en crear soluciones eficientes y escalables. 
+			Mi objetivo es siempre ofrecer productos de alta calidad que superen las expectativas del cliente. 
+		</h2>
 	</main>
+</section>
 </Layout>

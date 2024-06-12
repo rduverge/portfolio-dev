@@ -1,7 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import Badge from "../components/badge.astro";
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import SocialPill from "../components/SocialPill.astro";
+import GithubIcon from "../components/icons/Github.astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -23,12 +25,29 @@ import Badge from "../components/badge.astro";
           <Badge>Disponible para trabajar</Badge></a
         >
       </h1>
-      <h2 class="text-xl opacity-80">
-        Desarrollador Web de Santo Domingo, República Dominicana. Me especializo
-        en crear soluciones eficientes y escalables. Mi objetivo es siempre
-        ofrecer productos de alta calidad que superen las expectativas del
-        cliente.
+      <h2 class="text-2xl text-wrap">
+        Desarrollador Web de <span class="text-yellow-200/90"
+          >República Dominicana.
+        </span> Me especializo en crear soluciones eficientes y escalables.<span
+          class="opacity-90"
+        >
+          Mi objetivo es siempre ofrecer productos de alta calidad que superen
+          las expectativas del cliente.</span
+        >
       </h2>
+
+      <nav class="flex gap-x-2 mt-7">
+        <SocialPill
+          href="https://www.linkedin.com/in/rolando-a-duvergé-5b0826234"
+        >
+          <LinkedInIcon class="w-6 h-6" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/rduverge">
+          <GithubIcon class="w-6 h-6" />
+          GitHub
+        </SocialPill>
+      </nav>
     </section>
   </main>
 </Layout>
